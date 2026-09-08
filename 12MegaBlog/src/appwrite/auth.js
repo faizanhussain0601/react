@@ -35,15 +35,15 @@ export class AuthService {
         }
     }
 
-    async getCurrentUser(){
-        try {
-            return await this.account.get();
-        } catch (error) {
-          throw error;
-        }
-
+   async getCurrentUser() {
+    try {
+        return await this.account.get();
+    } catch (error) {
+        console.log("No authenticated user:", error.message);
         return null;
     }
+}
+
 
     async logout(){
         try {
