@@ -5,7 +5,6 @@ import {login} from '../store/authSlice'
 import { useDispatch } from 'react-redux'
 import {Button,Input,Logo} from "./index"
 import { set, useForm } from 'react-hook-form'
-import { useForm } from 'react-hook-form'
 
 
 function Signup() {
@@ -40,8 +39,8 @@ function Signup() {
                </span>
             </div>
           <h2 className="text-center text-2xl font-bold
-             leading-tight">Sign up to create account</h2>
-            <p className="mt-2 text-center text-base text-black/60">
+             leading-tight" style={{ color: "black" }}>Sign up to create account</h2>
+            <p className="mt-2 text-center text-base text-black">
               Already have an account ?&nbsp;
                 <Link 
                  to="/login"
